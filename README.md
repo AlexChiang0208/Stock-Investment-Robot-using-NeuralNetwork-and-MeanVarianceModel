@@ -20,8 +20,17 @@ Calculate the average performance in 59 different entry times:
 
 ## 2. Model Description
 
+#### Stage 1: Select N stocks with the highest expected returns from Deep Neural Network
 
+#### Stage 2: Use Markowitzs' MV model to get best investment portfolio
 
+#### Stage 3: Static rebalance in three months (60 days)
+
+* Data: Top 150 listed stocks in TWII, excluding early unlisted and suspended trading stocks.
+
+* X_features: Momentum of returns in Behavior Finance Indicators - mean, sigma, skewness, kurtosis. (Choose better features by finding lower p-value in Linear Regression testing.)
+
+* y_predict: Stock returns three month later
 
 
 
@@ -85,7 +94,6 @@ model.compile(optimizer=adam, loss='mean_squared_error')
 # Training data split 20% to validate it
 history = model.fit(Data_train_X_scaled, Data_train_y, 
           epochs=300, batch_size=30, validation_split=0.2, shuffle=False)
-model.save(outpu+'stock_model/'+i+'_model.h5')
 ```
 
 #### Markowitz's Mean Variable Model
