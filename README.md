@@ -66,7 +66,7 @@ Data_test_X_scaled = pd.DataFrame(Data_test_X_scaled,
 ```
 
 #### Modeling
-The part I spend lots of time for testing. Because I'm still not a master of deep learning, I try method of exhaustion about the layers, nodes, activation function etc., and then find a best one. You must can find the hyperparameters better than mine.
+This part I spend lots of time for testing. Because I'm still not a master of deep learning, I try method of exhaustion about the layers, nodes, activation function etc., and then find a best one. You must can find the hyperparameters better than mine.
 ```python
 model = Sequential()
 model.add(layers.Dense(128, activation='relu',input_dim=(16)))
@@ -109,13 +109,18 @@ def min_variance(mean_returns, cov_matrix):
 
 
 ## 4. DIY Optimization
-I will keep optimizing this model since it was not the best one. There are many ways to do this job, such as changing the input features(Technical indicators, financial indicators, etc.), change the Neural Network(LSTM), using for-loop or other method to find the best hyperparameters in this model.
+I will keep optimizing this model since it was not the best one. There are many ways to do this job, such as changing the input features(Technical Indicators, Financial Indicators, etc.), change the Neural Network(LSTM), using for-loop or other method to find the best hyperparameters in this model.
 
 
 ## 5. Reminder
-##### (1) To save storage space in GitHub, I only put the first photo in a file.
-##### (2) Remember to change the file address and create input, output file when you’re running this code.
-##### (3) You can try to modify maximum of percentage and numbers of stock.
-##### (4) Since portfolio are exchanged every three months, transaction costs are not considered.
-##### (5) When selecting current stocks, you need to remove the missing information. (Sometimes the open source from yfinance has missing data.)
+
+(1) To save storage space in GitHub, I only put the first photo in a file.
+
+(2) Remember to change the file address and create input, output file when you’re running this code.
+
+(3) You can try to modify maximum of percentage and numbers of stock.
+
+(4) Since portfolio are exchanged every three months, transaction costs are not considered.
+
+(5) When selecting current stocks, you need to remove the missing information. (Sometimes the open source from yfinance has missing data.)
 
