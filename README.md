@@ -4,7 +4,7 @@ How to select stocks and invest is a big question that investors will face. Weal
 
 This research uses Behavior Finance Indicators, Deep Neural Networks, and Optimization Algorithms to construct a complete Stock Robo Advisor, which includes three stages - stock selection, optimal asset allocation, and regular rebalancing in three months. The performance of this Stock Robo Advisor is presented in excel and pictures.
 
-The model constructed through the data from 2004 to 2016. It can easily assist investors in making decisions and finding the appropriate stock allocation. For future stock selection strategies, you can continue to use this research as a reference.
+The model constructed through the data from 2004 to 201. It can easily assist investors in making decisions and finding the appropriate stock allocation. For future stock selection strategies, you can continue to use this research as a reference.
 
 The following details:
 
