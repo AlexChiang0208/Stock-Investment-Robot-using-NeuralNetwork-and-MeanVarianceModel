@@ -9,10 +9,13 @@ The model constructed through the data from 2004 to 2015. It can easily assist i
 The following details:
 
 ## 1. Performance
+
 Calculate the average performance in 59 different entry times: 
-##### IRR 17.5%
-##### Sigma 19.8%
-##### Sharpe Ratio 0.87
+
+#### IRR 17.5%
+#### Sigma 19.8%
+#### Sharpe Ratio 0.87
+
 ![GITHUB](output/portfolio.png)
 
 ## 2. Model Description
