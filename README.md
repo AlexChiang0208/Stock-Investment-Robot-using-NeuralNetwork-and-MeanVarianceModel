@@ -1,4 +1,4 @@
-# Stock-Investment-Robo-using-NeuralNetwork-and-MeanVarianceModel
+# Stock-Investment-Robot-using-NeuralNetwork-and-MeanVarianceModel
 
 How to select stocks and invest is a big question that investors will face. Wealth management services provided by financial institutions usually have higher limits. The prevalence of Robo Advisor can provide to general public the professional wealth management and asset allocation service with low threshold.
 
