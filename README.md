@@ -6,7 +6,7 @@ This research uses Behavior Finance Indicators, Deep Neural Networks, and Optimi
 
 The model constructed through the data from 2004 to 2015. It can easily assist investors in making decisions and finding the appropriate stock allocation. For future stock selection strategies, you can continue to use this research as a reference.
 
-The following details:
+###### Here are following details:
 
 ## 1. Performance
 
