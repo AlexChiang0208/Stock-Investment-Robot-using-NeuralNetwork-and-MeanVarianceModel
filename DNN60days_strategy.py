@@ -159,12 +159,12 @@ for da,i in zip(stock_id, stock_name):
 
     # Modeling
     model = Sequential()
-    model.add(layers.Dense(64, activation='relu',input_dim=(16)))
+    model.add(layers.Dense(128, activation='relu',input_dim=(16)))
+    model.add(layers.Dense(112, activation='relu'))
+    model.add(layers.Dense(86, activation='relu'))
     model.add(layers.Dense(64, activation='relu'))
-    model.add(layers.Dense(64, activation='relu'))
-    model.add(layers.Dense(64, activation='relu'))
-    model.add(layers.Dense(64, activation='relu'))
-    model.add(layers.Dense(64, activation='relu'))
+    model.add(layers.Dense(48, activation='relu'))
+    model.add(layers.Dense(32, activation='relu'))
     model.add(layers.Dense(1))
     
     # Change an optimizers' learning rate
@@ -222,7 +222,7 @@ workbook.close()
 '''
 Step 3 - Make a portfolio with Markowitz's MV model
 Each stocks percentage & Number of stocks are adjustable
-Default - Max percentage: 20% ; Number of stock: 8
+Default - Max percentage: 10% ; Number of stock: 10
 '''
 
 import pandas as pd
