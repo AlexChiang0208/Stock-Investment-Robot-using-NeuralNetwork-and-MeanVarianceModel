@@ -38,11 +38,15 @@ Calculate the average performance in 59 different entry times:
 
 There are five parts about my code. When you download it, you can see different parts which separate from #%% mark.
 
-#### (1) Features Engineering   
-#### (2) Modeling (Training, evaluation and store it)
-#### (3) Make a portfolio with Markowitz's MV model
-#### (4) Let's investing: Get today's stock id with percentage
-#### (5) Simulate performance of 59 start day
+(1) Features Engineering   
+
+(2) Modeling (Training, evaluation and store it)
+
+(3) Make a portfolio with Markowitz's MV model
+
+(4) Let's investing: Get today's stock id with percentage
+
+(5) Simulate performance of 59 start day
 
 Part 4 and 5 are similar. So after learning part 1 ~ 3, you can easily make your own robot.
 
