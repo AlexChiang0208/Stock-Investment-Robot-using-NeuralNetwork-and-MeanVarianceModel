@@ -11,9 +11,9 @@ The following details:
 
 ## 1. Performance from 2016 to 2020
 
-##### > IRR 17.5%
-##### > Sigma 19.8%
-##### > Sharpe Ratio 0.87
+##### IRR 17.5%
+##### Sigma 19.8%
+##### Sharpe Ratio 0.87
 
 
 
