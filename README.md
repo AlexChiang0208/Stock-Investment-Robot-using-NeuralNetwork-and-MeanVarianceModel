@@ -121,7 +121,7 @@ def min_variance(mean_returns, cov_matrix):
 
 
 ## 4. DIY Optimization
-I will keep optimizing this model since it was not the best one. There are many ways to do this job, such as changing the input features(Technical Indicators, Financial Indicators, etc.), change the Neural Network(LSTM), using for-loop or other method to find the best hyperparameters in this model.
+I will keep optimizing this model since it was not the best one. There are many ways to do this job, such as changing the input features(Technical Indicators, Financial Indicators, etc.), changing the Neural Network(LSTM), using for-loop or other method to find the best hyperparameters in this model.
 
 
 ## 5. Reminder
