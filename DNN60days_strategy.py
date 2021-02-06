@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jan 27 14:43:33 2021
-
-@author: alex_chiang
-"""
-
 '''
 Step 1 - Features Engineering
 The .csv is from yahoo finance(open data)
