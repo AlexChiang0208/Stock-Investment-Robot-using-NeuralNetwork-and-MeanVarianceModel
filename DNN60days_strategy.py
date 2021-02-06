@@ -284,7 +284,7 @@ for i in range(len(df_predict)):
 
     t1 = TW150.index.get_loc(df_predict.iloc[[i]].index[-1])
     t2 = ret_TW150.index.get_loc(df_predict.iloc[[i]].index[-1])
-    mean_return = TW150.iloc[t1-1-240:t1-1][buy_stock].mean()
+    mean_return = ret_TW150.iloc[t2-1-240:t2-1][buy_stock].mean()
     cov_matrix = ret_TW150.iloc[t2-1-240:t2-1][buy_stock].cov()
     w = min_variance(mean_return, cov_matrix)['x']
 
@@ -504,10 +504,9 @@ def Invest_Percentage(stock, today, num, max_percent):
 
     # Get portfolio
     buy_stock = ret_prediction.head(num).index.tolist()
-    t1 = stock.index.get_loc(today)
-    t2 = ret_TW150.index.get_loc(today)
-    mean_return = TW150.iloc[t1-1-240:t1-1][buy_stock].mean()
-    cov_matrix = ret_TW150.iloc[t2-1-240:t2-1][buy_stock].cov()
+    t = ret_TW150.index.get_loc(today)
+    mean_return = ret_TW150.iloc[t-1-240:t-1][buy_stock].mean()
+    cov_matrix = ret_TW150.iloc[t-1-240:t-1][buy_stock].cov()
     w = min_variance(mean_return, cov_matrix)['x']
 
     globals()['Portfolio_'+today.replace('-','')] = pd.DataFrame(w, index=buy_stock)
@@ -584,7 +583,7 @@ for a,b,c,d,e in zip(range(0,59), grade, irr, sigma, SharpeRatio):
 
         t1 = TW150.index.get_loc(df_pre.iloc[[i]].index[-1])
         t2 = ret_TW150.index.get_loc(df_pre.iloc[[i]].index[-1])
-        mean_return = TW150.iloc[t1-1-240:t1-1][buy_stock].mean()
+        mean_return = ret_TW150.iloc[t2-1-240:t2-1][buy_stock].mean()
         cov_matrix = ret_TW150.iloc[t2-1-240:t2-1][buy_stock].cov()
         w = min_variance(mean_return, cov_matrix)['x']
 
