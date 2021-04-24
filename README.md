@@ -126,7 +126,7 @@ I will keep optimizing this model since it was not the best one. There are many 
 
 ## 5. Reminder
 
-(1) To save storage space in GitHub, I only put the first photo in a file.
+(1) To save storage space in GitHub, I only put the first photo in a file. (Solved!! Using Git LFS)
 
 (2) Remember to change the file address and create input, output file when you’re running this code.
 
