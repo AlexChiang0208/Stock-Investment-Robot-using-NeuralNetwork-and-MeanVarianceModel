@@ -7,7 +7,7 @@ Using stock price to make my own features
 import pandas as pd
 import numpy as np
 
-inpu = '/Users/alex_chiang/Documents/GitHub/Stock-Investment-Robo-using-NeuralNetwork-and-MeanVarianceModel/input/'
+inpu = '/Users/alex_chiang/Documents/GitHub/Stock-Investment-Robot-using-NeuralNetwork-and-MeanVarianceModel/input/'
 
 # Get Adj Close from TWII and first 150 market value stocks in Taiwan
 TWII = pd.read_csv(inpu+'TWII_CloseAdj.csv', parse_dates=True, index_col='Date')
@@ -111,8 +111,8 @@ from keras import layers
 import keras
 import xlwings as xw
 
-inpu = '/Users/alex_chiang/Documents/GitHub/Stock-Investment-Robo-using-NeuralNetwork-and-MeanVarianceModel/input/'
-outpu = '/Users/alex_chiang/Documents/GitHub/Stock-Investment-Robo-using-NeuralNetwork-and-MeanVarianceModel/output/'
+inpu = '/Users/alex_chiang/Documents/GitHub/Stock-Investment-Robot-using-NeuralNetwork-and-MeanVarianceModel/input/'
+outpu = '/Users/alex_chiang/Documents/GitHub/Stock-Investment-Robot-using-NeuralNetwork-and-MeanVarianceModel/output/'
 
 # Read my features and other data
 TWII = pd.read_csv(inpu+'TWII_CloseAdj.csv', parse_dates=True, index_col='Date')
@@ -200,7 +200,7 @@ for da,i in zip(stock_id, stock_name):
  
 # Using xlwings to upload pictures into excel
 st = ['st_'+i for i in stock_name]
-workbook = xw.Book(outpu+'DNN60days_return_prediction.xlsx')  
+workbook = xw.Book(outpu+'DNN60days_return_prediction.xlsx')
 for i,j in zip(stock_name, st):
  
     globals()[j] = workbook.sheets(i+'_prediction')
@@ -224,8 +224,8 @@ import matplotlib.pyplot as plt
 import xlwings as xw
 import scipy.optimize as sco
 
-inpu = '/Users/alex_chiang/Documents/GitHub/Stock-Investment-Robo-using-NeuralNetwork-and-MeanVarianceModel/input/'
-outpu = '/Users/alex_chiang/Documents/GitHub/Stock-Investment-Robo-using-NeuralNetwork-and-MeanVarianceModel/output/'
+inpu = '/Users/alex_chiang/Documents/GitHub/Stock-Investment-Robot-using-NeuralNetwork-and-MeanVarianceModel/input/'
+outpu = '/Users/alex_chiang/Documents/GitHub/Stock-Investment-Robot-using-NeuralNetwork-and-MeanVarianceModel/output/'
 
 TWII = pd.read_csv(inpu+'TWII_CloseAdj.csv', parse_dates=True, index_col='Date')
 TW150 = pd.read_csv(inpu+'TW150_CloseAdj.csv', parse_dates=True, index_col='Date')
@@ -354,8 +354,8 @@ from sklearn.preprocessing import StandardScaler
 import scipy.optimize as sco
 import keras
 
-inpu = '/Users/alex_chiang/Documents/GitHub/Stock-Investment-Robo-using-NeuralNetwork-and-MeanVarianceModel/input/'
-outpu = '/Users/alex_chiang/Documents/GitHub/Stock-Investment-Robo-using-NeuralNetwork-and-MeanVarianceModel/output/'
+inpu = '/Users/alex_chiang/Documents/GitHub/Stock-Investment-Robot-using-NeuralNetwork-and-MeanVarianceModel/input/'
+outpu = '/Users/alex_chiang/Documents/GitHub/Stock-Investment-Robot-using-NeuralNetwork-and-MeanVarianceModel/output/'
 TW150 = pd.read_csv(inpu+'TW150_CloseAdj.csv', parse_dates=True, index_col='Date')
 stock_id = TW150.columns.tolist()
 
@@ -519,8 +519,8 @@ import datetime as dt
 import matplotlib.pyplot as plt
 import xlwings as xw
 
-inpu = '/Users/alex_chiang/Documents/GitHub/Stock-Investment-Robo-using-NeuralNetwork-and-MeanVarianceModel/input/'
-outpu = '/Users/alex_chiang/Documents/GitHub/Stock-Investment-Robo-using-NeuralNetwork-and-MeanVarianceModel/output/'
+inpu = '/Users/alex_chiang/Documents/GitHub/Stock-Investment-Robot-using-NeuralNetwork-and-MeanVarianceModel/input/'
+outpu = '/Users/alex_chiang/Documents/GitHub/Stock-Investment-Robot-using-NeuralNetwork-and-MeanVarianceModel/output/'
 xls = pd.ExcelFile(outpu+'DNN60days_return_prediction.xlsx')
 sheet_name = xls.sheet_names
 
